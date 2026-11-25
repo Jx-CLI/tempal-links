@@ -11,16 +11,18 @@ main{max-width:560px;margin:0 auto;padding:24px max(16px,env(safe-area-inset-rig
 h1{font-size:1.5rem;margin:0}p.s{color:var(--muted);margin:4px 0 16px}
 input{width:100%;font-size:1.1rem;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg)}
 ul{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}
-li{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+li[hidden]{display:none}li{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
 .n{font-weight:800;font-size:1.25rem;min-width:2.2em;color:var(--accent);font-variant-numeric:tabular-nums}
 .t{min-width:0;overflow-wrap:anywhere}
 a{background:var(--accent);color:var(--on);text-decoration:none;font-weight:700;padding:9px 12px;border-radius:9px;white-space:nowrap}
 a:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.ad{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-weight:600;margin:0 0 14px}
 .none{color:var(--muted);text-align:center;padding:20px}
 footer{color:var(--muted);font-size:.82rem;margin-top:24px;display:grid;gap:4px}
 </style></head><body><main>
   <h1>템빨살림 상품 모음</h1>
   <p class="s">영상에서 말한 번호를 찾아 누르세요.</p>
+  <p class="ad">[광고] 이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
   <label for="q" class="s" style="display:block;margin:0 0 6px">번호나 이름으로 찾기</label>
   <input id="q" type="search" inputmode="search" placeholder="예: 3 또는 매트" autocomplete="off">
   <ul id="list">
@@ -32,7 +34,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:24px;display:grid;gap:4px}
     <li data-n="1" data-t="압축 코인 타올 25장"><span class="n">1</span><span class="t">압축 코인 타올 25장</span><a href="https://link.coupang.com/a/iWbc0CsG9k" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></li>
   </ul>
   <p class="none" id="none" hidden>찾는 상품이 없어요. 번호를 다시 확인해 주세요.</p>
-  <footer><span>이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</span><span>영상 속 장면은 AI로 만든 것이 들어 있습니다. 값 · 배송은 쿠팡 화면이 기준입니다.</span></footer>
+  <footer><span>이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</span><span>영상에 AI로 만든 장면이 들어 있습니다. 값과 배송은 쿠팡 화면을 기준으로 봐 주세요.</span></footer>
 </main>
 <script>
 const q=document.getElementById('q'),items=[...document.querySelectorAll('#list li')],none=document.getElementById('none');
