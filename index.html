@@ -7,38 +7,40 @@
 :root{--bg:#f4f6f3;--fg:#1c231f;--muted:#5f6b64;--card:#fff;--line:#dde3df;--accent:#2f7d5b;--on:#fff}
 @media (prefers-color-scheme:dark){:root{--bg:#121814;--fg:#e5ebe7;--muted:#9fb0a6;--card:#1a221d;--line:#2b3530;--accent:#5fbf92;--on:#0d1410;color-scheme:dark}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
-main{max-width:560px;margin:0 auto;padding:24px max(16px,env(safe-area-inset-right)) 40px max(16px,env(safe-area-inset-left))}
+main{max-width:720px;margin:0 auto;padding:24px max(16px,env(safe-area-inset-right)) 40px max(16px,env(safe-area-inset-left))}
 h1{font-size:1.5rem;margin:0}p.s{color:var(--muted);margin:4px 0 16px}
 input{width:100%;font-size:1.1rem;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg)}
-ul{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}
-li[hidden]{display:none}li{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
-.n{font-weight:800;font-size:1.25rem;min-width:2.2em;color:var(--accent);font-variant-numeric:tabular-nums}
-.t{min-width:0;overflow-wrap:anywhere}
-a{background:var(--accent);color:var(--on);text-decoration:none;font-weight:700;padding:9px 12px;border-radius:9px;white-space:nowrap}
-a:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+ul{list-style:none;padding:0;margin:16px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+li[hidden]{display:none}
+.c{position:relative;display:flex;flex-direction:column;height:100%;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;color:var(--fg);text-decoration:none}
+.c img,.ph{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 22%;background:var(--line)}
+.n{position:absolute;top:8px;left:8px;background:var(--accent);color:var(--on);font-weight:800;font-size:1.05rem;padding:3px 9px;border-radius:999px;font-variant-numeric:tabular-nums;box-shadow:0 1px 4px #0004}
+.t{padding:10px 12px 4px;font-weight:600;font-size:.95rem;line-height:1.35;overflow-wrap:anywhere;flex:1}
+.b{margin:6px 12px 12px;background:var(--accent);color:var(--on);font-weight:700;text-align:center;padding:8px 10px;border-radius:9px;font-size:.92rem}
+.c:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .ad{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-weight:600;margin:0 0 14px}
 .none{color:var(--muted);text-align:center;padding:20px}
 footer{color:var(--muted);font-size:.82rem;margin-top:24px;display:grid;gap:4px}
 </style></head><body><main>
   <h1>템빨살림 상품 모음</h1>
-  <p class="s">영상에서 말한 번호를 찾아 누르세요.</p>
+  <p class="s">영상 설명 · 화면에 나온 번호의 카드를 누르세요.</p>
   <p class="ad">[광고] 이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
   <label for="q" class="s" style="display:block;margin:0 0 6px">번호나 이름으로 찾기</label>
   <input id="q" type="search" inputmode="search" placeholder="예: 3 또는 매트" autocomplete="off">
   <ul id="list">
-    <li data-n="13" data-t="팍클리 데스크오브제 액체자석 자성유체 관찰 세트"><span class="n">13</span><span class="t">팍클리 데스크오브제 액체자석 자성유체 관찰 세트</span><a href="https://link.coupang.com/a/iZmHDFmwkm" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></li>
-    <li data-n="12" data-t="결로방지 물흡수 테이프 2개(폭 30mm · 길이 3m 롤)"><span class="n">12</span><span class="t">결로방지 물흡수 테이프 2개(폭 30mm · 길이 3m 롤)</span><a href="https://link.coupang.com/a/iZmWiHKMI8" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></li>
-    <li data-n="11" data-t="회전 조명 냉장고 자석(음악 디스크)"><span class="n">11</span><span class="t">회전 조명 냉장고 자석(음악 디스크)</span><a href="https://link.coupang.com/a/iZmDLEW3i0" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></li>
-    <li data-n="10" data-t="코멧 홈 틈새 줄눈 마카펜"><span class="n">10</span><span class="t">코멧 홈 틈새 줄눈 마카펜</span><a href="https://link.coupang.com/a/iZmTXEMqCO" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></li>
-    <li data-n="9" data-t="투명 겔 양면테이프"><span class="n">9</span><span class="t">투명 겔 양면테이프</span><a href="https://link.coupang.com/a/iZmSp7zrJ6" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></li>
-    <li data-n="8" data-t="보글보글 발포 변기 세정제"><span class="n">8</span><span class="t">보글보글 발포 변기 세정제</span><a href="https://link.coupang.com/a/iYQzhG1PR6" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></li>
-    <li data-n="7" data-t="스웨이드 지우개 + 브러시"><span class="n">7</span><span class="t">스웨이드 지우개 + 브러시</span><a href="https://link.coupang.com/a/iYQwQKxWou" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></li>
-    <li data-n="6" data-t="유리 발수 코팅제"><span class="n">6</span><span class="t">유리 발수 코팅제</span><a href="https://link.coupang.com/a/iXTs9xV1pY" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></li>
-    <li data-n="5" data-t="자기융착 실리콘 테이프"><span class="n">5</span><span class="t">자기융착 실리콘 테이프</span><a href="https://link.coupang.com/a/iXTtBWOvmK" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></li>
-    <li data-n="4" data-t="규조토 욕실 매트"><span class="n">4</span><span class="t">규조토 욕실 매트</span><a href="https://link.coupang.com/a/iXTrUruJ1U" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></li>
-    <li data-n="3" data-t="틈새 먼지 슬라임"><span class="n">3</span><span class="t">틈새 먼지 슬라임</span><a href="https://link.coupang.com/a/iXRBpg4a1Q" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></li>
-    <li data-n="2" data-t="실리콘 만능 뚜껑 6종"><span class="n">2</span><span class="t">실리콘 만능 뚜껑 6종</span><a href="https://link.coupang.com/a/iWckokgaya" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></li>
-    <li data-n="1" data-t="압축 코인 타올 25장"><span class="n">1</span><span class="t">압축 코인 타올 25장</span><a href="https://link.coupang.com/a/iWbc0CsG9k" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></li>
+    <li data-n="13" data-t="팍클리 데스크오브제 액체자석 자성유체 관찰 세트"><a class="c" href="https://link.coupang.com/a/iZmHDFmwkm" target="_blank" rel="sponsored nofollow noopener"><img src="img/13.jpg" alt="" loading="lazy" width="360" height="450"><span class="n">13번</span><span class="t">팍클리 데스크오브제 액체자석 자성유체 관찰 세트</span><span class="b">쿠팡에서 보기</span></a></li>
+    <li data-n="12" data-t="결로방지 물흡수 테이프 2개(폭 30mm · 길이 3m 롤)"><a class="c" href="https://link.coupang.com/a/iZmWiHKMI8" target="_blank" rel="sponsored nofollow noopener"><img src="img/12.jpg" alt="" loading="lazy" width="360" height="450"><span class="n">12번</span><span class="t">결로방지 물흡수 테이프 2개(폭 30mm · 길이 3m 롤)</span><span class="b">쿠팡에서 보기</span></a></li>
+    <li data-n="11" data-t="회전 조명 냉장고 자석(음악 디스크)"><a class="c" href="https://link.coupang.com/a/iZmDLEW3i0" target="_blank" rel="sponsored nofollow noopener"><img src="img/11.jpg" alt="" loading="lazy" width="360" height="450"><span class="n">11번</span><span class="t">회전 조명 냉장고 자석(음악 디스크)</span><span class="b">쿠팡에서 보기</span></a></li>
+    <li data-n="10" data-t="코멧 홈 틈새 줄눈 마카펜"><a class="c" href="https://link.coupang.com/a/iZmTXEMqCO" target="_blank" rel="sponsored nofollow noopener"><img src="img/10.jpg" alt="" loading="lazy" width="360" height="450"><span class="n">10번</span><span class="t">코멧 홈 틈새 줄눈 마카펜</span><span class="b">쿠팡에서 보기</span></a></li>
+    <li data-n="9" data-t="투명 겔 양면테이프"><a class="c" href="https://link.coupang.com/a/iZmSp7zrJ6" target="_blank" rel="sponsored nofollow noopener"><img src="img/9.jpg" alt="" loading="lazy" width="360" height="450"><span class="n">9번</span><span class="t">투명 겔 양면테이프</span><span class="b">쿠팡에서 보기</span></a></li>
+    <li data-n="8" data-t="보글보글 발포 변기 세정제"><a class="c" href="https://link.coupang.com/a/iYQzhG1PR6" target="_blank" rel="sponsored nofollow noopener"><img src="img/8.jpg" alt="" loading="lazy" width="360" height="450"><span class="n">8번</span><span class="t">보글보글 발포 변기 세정제</span><span class="b">쿠팡에서 보기</span></a></li>
+    <li data-n="7" data-t="스웨이드 지우개 + 브러시"><a class="c" href="https://link.coupang.com/a/iYQwQKxWou" target="_blank" rel="sponsored nofollow noopener"><img src="img/7.jpg" alt="" loading="lazy" width="360" height="450"><span class="n">7번</span><span class="t">스웨이드 지우개 + 브러시</span><span class="b">쿠팡에서 보기</span></a></li>
+    <li data-n="6" data-t="유리 발수 코팅제"><a class="c" href="https://link.coupang.com/a/iXTs9xV1pY" target="_blank" rel="sponsored nofollow noopener"><img src="img/6.jpg" alt="" loading="lazy" width="360" height="450"><span class="n">6번</span><span class="t">유리 발수 코팅제</span><span class="b">쿠팡에서 보기</span></a></li>
+    <li data-n="5" data-t="자기융착 실리콘 테이프"><a class="c" href="https://link.coupang.com/a/iXTtBWOvmK" target="_blank" rel="sponsored nofollow noopener"><img src="img/5.jpg" alt="" loading="lazy" width="360" height="450"><span class="n">5번</span><span class="t">자기융착 실리콘 테이프</span><span class="b">쿠팡에서 보기</span></a></li>
+    <li data-n="4" data-t="규조토 욕실 매트"><a class="c" href="https://link.coupang.com/a/iXTrUruJ1U" target="_blank" rel="sponsored nofollow noopener"><img src="img/4.jpg" alt="" loading="lazy" width="360" height="450"><span class="n">4번</span><span class="t">규조토 욕실 매트</span><span class="b">쿠팡에서 보기</span></a></li>
+    <li data-n="3" data-t="틈새 먼지 슬라임"><a class="c" href="https://link.coupang.com/a/iXRBpg4a1Q" target="_blank" rel="sponsored nofollow noopener"><img src="img/3.jpg" alt="" loading="lazy" width="360" height="450"><span class="n">3번</span><span class="t">틈새 먼지 슬라임</span><span class="b">쿠팡에서 보기</span></a></li>
+    <li data-n="2" data-t="실리콘 만능 뚜껑 6종"><a class="c" href="https://link.coupang.com/a/iWckokgaya" target="_blank" rel="sponsored nofollow noopener"><img src="img/2.jpg" alt="" loading="lazy" width="360" height="450"><span class="n">2번</span><span class="t">실리콘 만능 뚜껑 6종</span><span class="b">쿠팡에서 보기</span></a></li>
+    <li data-n="1" data-t="압축 코인 타올 25장"><a class="c" href="https://link.coupang.com/a/iWbc0CsG9k" target="_blank" rel="sponsored nofollow noopener"><img src="img/1.jpg" alt="" loading="lazy" width="360" height="450"><span class="n">1번</span><span class="t">압축 코인 타올 25장</span><span class="b">쿠팡에서 보기</span></a></li>
   </ul>
   <p class="none" id="none" hidden>찾는 상품이 없어요. 번호를 다시 확인해 주세요.</p>
   <footer><span>이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</span><span>영상에 AI로 만든 장면이 들어 있습니다. 값과 배송은 쿠팡 화면을 기준으로 봐 주세요.</span></footer>
